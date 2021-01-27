@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Conditional Statements - Exercise/Conditional Statements - Exercise.iml" filepath="$PROJECT_DIR$/Conditional Statements - Exercise/Conditional Statements - Exercise.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Conditional Statements - Lab/Conditional Statements - Lab.iml" filepath="$PROJECT_DIR$/Conditional Statements - Lab/Conditional Statements - Lab.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Conditional Statements Advanced - Exercise/Conditional Statements Advanced - Exercise.iml" filepath="$PROJECT_DIR$/Conditional Statements Advanced - Exercise/Conditional Statements Advanced - Exercise.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Conditional Statements Advanced - Lab/Conditional Statements Advanced - Lab.iml" filepath="$PROJECT_DIR$/Conditional Statements Advanced - Lab/Conditional Statements Advanced - Lab.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ConditionalStatements-MoreExercises/ConditionalStatements-MoreExercises.iml" filepath="$PROJECT_DIR$/ConditionalStatements-MoreExercises/ConditionalStatements-MoreExercises.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ExamProgramingBasicMartc2020/ExamProgramingBasicMartc2020.iml" filepath="$PROJECT_DIR$/ExamProgramingBasicMartc2020/ExamProgramingBasicMartc2020.iml" />
-      <module fileurl="file://$PROJECT_DIR$/First Steps In Coding/First Steps In Coding.iml" filepath="$PROJECT_DIR$/First Steps In Coding/First Steps In Coding.iml" />
-      <module fileurl="file://$PROJECT_DIR$/For-Loop-MoreExercises/For-Loop-MoreExercises.iml" filepath="$PROJECT_DIR$/For-Loop-MoreExercises/For-Loop-MoreExercises.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Nested Loops - Exercise/Nested Loops - Exercise.iml" filepath="$PROJECT_DIR$/Nested Loops - Exercise/Nested Loops - Exercise.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Nested Loops - Lab/Nested Loops - Lab.iml" filepath="$PROJECT_DIR$/Nested Loops - Lab/Nested Loops - Lab.iml" />
-      <module fileurl="file://$PROJECT_DIR$/NestedConditionalStatements-MoreExercises/NestedConditionalStatements-MoreExercises.iml" filepath="$PROJECT_DIR$/NestedConditionalStatements-MoreExercises/NestedConditionalStatements-MoreExercises.iml" />
-      <module fileurl="file://$PROJECT_DIR$/NestedLoops-MoreExercises/NestedLoops-MoreExercises.iml" filepath="$PROJECT_DIR$/NestedLoops-MoreExercises/NestedLoops-MoreExercises.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/Programming Basics.iml" filepath="$PROJECT_DIR$/.idea/Programming Basics.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Programming Basics Online Exam - 28 and 29 March 2020/Programming Basics Online Exam - 28 and 29 March 2020.iml" filepath="$PROJECT_DIR$/Programming Basics Online Exam - 28 and 29 March 2020/Programming Basics Online Exam - 28 and 29 March 2020.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ProgrammingBasicsOnlineExam-15and16June2019/ProgrammingBasicsOnlineExam-15and16June2019.iml" filepath="$PROJECT_DIR$/ProgrammingBasicsOnlineExam-15and16June2019/ProgrammingBasicsOnlineExam-15and16June2019.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ProgrammingBasicsOnlineExam-20and21April2019/ProgrammingBasicsOnlineExam-20and21April2019.iml" filepath="$PROJECT_DIR$/ProgrammingBasicsOnlineExam-20and21April2019/ProgrammingBasicsOnlineExam-20and21April2019.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ProgrammingBasicsOnlineExam-27and28July2019/ProgrammingBasicsOnlineExam-27and28July2019.iml" filepath="$PROJECT_DIR$/ProgrammingBasicsOnlineExam-27and28July2019/ProgrammingBasicsOnlineExam-27and28July2019.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ProgrammingBasicsOnlineExam-6and7April2019/ProgrammingBasicsOnlineExam-6and7April2019.iml" filepath="$PROJECT_DIR$/ProgrammingBasicsOnlineExam-6and7April2019/ProgrammingBasicsOnlineExam-6and7April2019.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ProgrammingBasicsOnlineExam-6and7July2019/ProgrammingBasicsOnlineExam-6and7July2019.iml" filepath="$PROJECT_DIR$/ProgrammingBasicsOnlineExam-6and7July2019/ProgrammingBasicsOnlineExam-6and7July2019.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ProgrammingBasicsOnlineExam-9and10March2019/ProgrammingBasicsOnlineExam-9and10March2019.iml" filepath="$PROJECT_DIR$/ProgrammingBasicsOnlineExam-9and10March2019/ProgrammingBasicsOnlineExam-9and10March2019.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ProgrammingBasicsOnlineRetakeExam-2and3May2019/ProgrammingBasicsOnlineRetakeExam-2and3May2019.iml" filepath="$PROJECT_DIR$/ProgrammingBasicsOnlineRetakeExam-2and3May2019/ProgrammingBasicsOnlineRetakeExam-2and3May2019.iml" />
-      <module fileurl="file://$PROJECT_DIR$/While-Loop-MoreExercises/While-Loop-MoreExercises.iml" filepath="$PROJECT_DIR$/While-Loop-MoreExercises/While-Loop-MoreExercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SoftUni.iml" filepath="$PROJECT_DIR$/.idea/SoftUni.iml" />
     </modules>
   </component>
 </project>
