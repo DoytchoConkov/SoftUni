@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
-/../../../../:\SoftUni\Java Advanced\.idea/dataSources/
+/../../../../../:\SoftUni\Java Advanced\Stacks and Queues - Lab\.idea/dataSources/
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
