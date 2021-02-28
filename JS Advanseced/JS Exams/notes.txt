@@ -1,0 +1,18 @@
+ let comment = this._comments.find(e => e.id === id);
+
+ throw new Error(`aaa`);
+
+
+
+
+ let user = this._likes.find(e => {
+            if (e === username) {
+                return e;
+            }
+        });
+        if (user === undefined) {
+            throw new Error("You can't dislike this article!");
+        }
+
+
+            
