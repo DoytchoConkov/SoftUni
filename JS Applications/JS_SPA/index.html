@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles.css">
+    <link rel="icon" type="image/png" href="./public/favicon.png">
+    <title>Shoe Shelf</title>
+</head>
+
+<body id="main">
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="./node_modules/sammy/lib/sammy.js"></script>
+    <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+           <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyDcpEsRVA6BOzJ1haNCsT5kE9liT9Tez3Q",
+              authDomain: "shoes-a4bbd.firebaseapp.com",
+              databaseURL: "https://shoes-a4bbd.firebaseio.com",
+              projectId: "shoes-a4bbd",
+              storageBucket: "shoes-a4bbd.appspot.com",
+              messagingSenderId: "553617029565",
+              appId: "1:553617029565:web:ef0720817abb53b7ed7ad4"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+          </script>
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>
