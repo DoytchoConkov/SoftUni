@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:include="~{fragments/head}"></th:block>
+
+<body>
+
+<th:block th:include="~{fragments/nav-bar}"></th:block>
+
+<div class="container">
+    <h2 class="text-center text-white">Add Brand</h2>
+    <form th:method="POST" action="/brands/add" th:object="${brandAddViewModel}"
+          class="main-form mx-auto col-md-8 d-flex flex-column justify-content-center" >
+        <div class="form-group">
+            <label for="name" class="text-white font-weight-bold">Brand</label>
+            <input th:value="*{name}" id="name" name="name" type="text" min="2" max="50"
+                   class="form-control"
+                   placeholder="Enter brand"/>
+            <p class="errors alert alert-danger" th:if="${#fields.hasErrors('name')}">
+                Invalid size of brand.
+            </p>
+        </div>
+        <p class="errors alert alert-danger" th:if="${existBrand}">
+            Brand already exist.
+        </p>
+        <div class="row">
+            <div class="col col-md-4">
+                <div class="button-holder d-flex">
+                    <input type="submit" class="btn btn-info btn-lg" value="Add"/>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<th:block th:include="~{fragments/footer}"></th:block>
+
+</body>
+</html>

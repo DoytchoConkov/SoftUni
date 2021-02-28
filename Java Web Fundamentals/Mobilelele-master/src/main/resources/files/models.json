@@ -1,0 +1,52 @@
+[
+  {
+    "name": "308SW",
+    "category": "CAR",
+    "imageURL": "https://cdn3.focus.bg/autodata/i/peugeot/308/308-sw-facelift-2011/large/e30b742d4d3a975c2f4d7836df06da31.jpg",
+    "startYear": "2011",
+    "endYear": "2013",
+    "brand": "Peugeot"
+  },{
+    "name": "508SW",
+    "category": "CAR",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/2011_Peugeot_508_Allure_HDi_sedan_%282015-07-24%29_01.jpg/800px-2011_Peugeot_508_Allure_HDi_sedan_%282015-07-24%29_01.jpg",
+    "startYear": "2011",
+    "endYear": "2018",
+    "brand": "Peugeot"
+  },{
+    "name": "C5",
+    "category": "CAR",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Citro%C3%ABn_C5_II_front-1.JPG/1280px-Citro%C3%ABn_C5_II_front-1.JPG",
+    "startYear": "2007",
+    "endYear": "2017",
+    "brand": "Citroen"
+  },{
+    "name": "Focus",
+    "category": "CAR",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/2018_Ford_Focus_ST-Line_Front.jpg/1024px-2018_Ford_Focus_ST-Line_Front.jpg",
+    "startYear": "2018",
+    "endYear": "0",
+    "brand": "Ford"
+  },{
+    "name": "Magna",
+    "category": "MOTORCYCLE",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/5/59/Honda_Magna_close-up.jpg",
+    "startYear": "1984",
+    "endYear": "1985",
+    "brand": "Honda"
+  },{
+    "name": "280.43",
+    "category": "BUS",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Ikarus280.jpg",
+    "startYear": "2011",
+    "endYear": "2013",
+    "brand": "Ikarus"
+  },{
+    "name": "Actros",
+    "category": "TRUCK",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Mercedes-Benz_Actros_truck.jpg/800px-Mercedes-Benz_Actros_truck.jpg",
+    "startYear": "2003",
+    "endYear": "2008",
+    "brand": "Mercedes-Benz"
+  }
+]

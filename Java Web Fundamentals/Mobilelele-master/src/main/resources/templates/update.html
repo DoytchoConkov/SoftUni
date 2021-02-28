@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:include="~{fragments/head}"></th:block>
+
+<body>
+
+<th:block th:include="~{fragments/nav-bar}"></th:block>
+
+<div class="container">
+    <h2 class="text-center text-white">Update Offer</h2>
+    <form th:method="post" action="" th:object="${offerAddViewModel}"
+          class="main-form mx-auto col-md-8 d-flex flex-column justify-content-center">
+        <div class="row">
+
+            <div class="form-group col-md-6 mb-3">
+                <label class="text-center text-white font-weight-bold" for="model">Model</label>
+                <select id="model" th:field="*{model}" class="form-control">
+                    <option value="" th:text="${offer.model}">- Select a model -</option>
+                    <div th:each="brand: ${brands}">
+                        <optgroup th:label="${brand.name}">
+                            <div th:each="mo: ${brand.model}">
+                                <option th:value="${mo}" th:text="${mo}">Model</option>
+                            </div>
+                        </optgroup>
+                    </div>
+                </select>
+                <p class="errors alert alert-danger" th:if="${loginError}">
+                    Vechicle model is required.
+                </p>
+            </div>
+            <div class="form-group col-md-6 mb-3">
+                <label for="price" class="text-white font-weight-bold">Price</label>
+                <input id="price" th:field="*{price}" type="number" min="0" step="100" class="form-control"
+                       th:placeholder="${offer.price}"/>
+                <p class="errors alert alert-danger" th:if="${loginError}">
+                    Suggested price is required.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-6 mb-3">
+                <label class="text-center text-white font-weight-bold" for="engine">Engine</label>
+                <select id="engine" th:field="*{engine}" class="form-control">
+                    <option value="" th:text="${offer.engine}">- Select engine type -</option>
+                    <div th:each="eng: ${engines}">
+                        <option th:value="${eng}" th:text="${eng}">
+                            Engine type
+                        </option>
+                    </div>
+                </select>
+                <p class="errors alert alert-danger" th:if="${loginError}">
+                    Engine type is required.
+                </p>
+            </div>
+            <div class="form-group col-md-6 mb-3">
+                <label class="text-center text-white font-weight-bold" for="transmission">Transmission</label>
+                <select id="transmission" th:field="*{transmission}" class="form-control">
+                    <option value="" th:text="${offer.transmission}">- Select transmission type -</option>
+                    <div th:each="transmission: ${transmissions}">
+                        <option th:value="${transmission}" th:text="${transmission}"> Transmission type
+                        </option>
+                    </div>
+                </select>
+                <p class="errors alert alert-danger" th:if="${loginError}">
+                    Transmission type is required.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-6 mb-3">
+                <label for="year" class="text-white font-weight-bold">Year</label>
+                <input id="year" type="number" min="1900" max="2099" step="1" class="form-control"
+                       th:text="${offer.year}" th:field="*{year}"/>
+                <p class="errors alert alert-danger" th:if="${loginError}">
+                    Manufacturing year is required.
+                </p>
+            </div>
+            <div class="form-group col-md-6 mb-3">
+                <label for="mileage" class="text-white font-weight-bold">Mileage</label>
+                <input id="mileage" th:field="*{mileage}" type="number" min="0" max="900000" step="100"
+                       class="form-control" th:text="${offer.mileage}"/>
+                <p class="errors alert alert-danger" th:if="${loginError}">
+                    Mileage in kilometers is required.
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="text-white font-weight-bold" for="description">Description</label>
+            <textarea id="description" th:field="*{description}" type="textarea" class="form-control" rows="3"
+                      th:placeholder="${offer.description}"></textarea>
+            <p class="errors alert alert-danger" th:if="${loginError}">
+                Description is required.
+            </p>
+        </div>
+        <div class="form-group">
+            <label class="text-white font-weight-bold" for="imageUrl">Image URL</label>
+            <input id="imageUrl" th:field="*{imageUrl}" type="url" class="form-control"
+                   th:placeholder="${offer.imageUrl}">
+            <p class="errors alert alert-danger" th:if="${loginError}">
+                Vehicle image URL is required.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col col-md-4">
+                <div class="button-holder d-flex">
+                    <input type="submit" class="btn btn-info btn-lg" value="Update Offer"/>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<th:block th:include="~{fragments/footer}"></th:block>
+
+</body>
+</html>

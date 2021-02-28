@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <th:block th:include="~{fragments/head}"></th:block>
+</head>
+
+<body>
+
+<th:block th:include="~{fragments/nav-bar}"></th:block>
+
+<div class="container">
+    <h2 class="text-center text-white m-3">All Brands</h2>
+    <div class='row mb-4 d-flex justify-content-around'>
+        <div class="brand-section col-md-5 mr-auto d-flex flex-column" th:each="brand: ${brands}">
+            <h2>Car brand:
+                <span th:text="${brand.name}"></span>
+            </h2>
+            <div>Models:
+                <table>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Start Year</th>
+                        <th>End Year</th>
+                        <th>Picture</th>
+                    </tr>
+                    <tr th:each="model , iter : ${brand.model}">
+                        <th th:text="${iter.index+1 }">No</th>
+                        <th th:text="${model.name}">Model Name</th>
+                        <th th:text="${model.category}">Model Category</th>
+                        <th th:text="${model.startYear}">Model Start Year</th>
+                        <th th:text="${model.endYear}">Model End Year</th>
+                        <th><img alt="image" th:src="${model.imageURL}"
+                                 class="img-thumbnail rounded"></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<th:block th:include="~{fragments/footer}"></th:block>
+
+</body>
+</html>
