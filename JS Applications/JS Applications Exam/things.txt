@@ -1,0 +1,55 @@
+ <a href="#/catalog/:{{teamId}}">Go To Team</a>
+
+     {{> header}}
+
+  {{> footer}}
+
+<input class="form-control" type="text" id="name" name="name" value="{{name}}"/>
+
+<form action="#/register" method="post">
+
+
+
+export function Notification(type, msg, ms = 1000) {
+  let notification = document.getElementById(`${type}Box`);
+  notification.style.display = 'block';
+  notification.innerHTML = msg;
+  setTimeout(() => {
+    notification.style.display = 'none';
+    notification.innerHTML = '';
+  }, ms);
+}
+
+
+ Notification('success', 'User registration successful.');
+
+  Notification('error', errors.join('<br>'));
+
+
+function Register(ctx) {
+  toggleLoading();
+  const errors = UserValidation(ctx.params);
+  if (errors.length === 0) {
+    const { username, password } = ctx.params;
+    kinvey.userRegister(username, password).then(userInfo => {
+      resetForm();
+      saveAuth(userInfo);
+      toggleLoading();
+      Notification('success', 'User registration successful.');
+      redirect(ctx, '#/');
+    });
+  } else {
+    Notification('error', errors.join('<br>'));
+  }
+}
+
+
+ toggleLoading();
+
+function toggleLoading(show = false) {
+  let loadingBox = document.getElementById('loadingBox');
+  loadingBox.style.display = show ? 'block' : 'none';
+}
+
+toggleLoading();
+Notification('success', 'User registration successful.');

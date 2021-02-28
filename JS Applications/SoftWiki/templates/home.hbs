@@ -1,0 +1,16 @@
+{{> header}}
+<h3 class="no-articles">No articles yet</h3>
+
+<!-- Home -->
+<div class="content">
+ 
+  <section class="js">
+     {{#each categories}}
+    <h2>{{category}}</h2>
+    <div class="articles">
+      {{> articles}}
+    </div>
+    {{/each}}
+  </section>
+</div>
+{{> footer}}
